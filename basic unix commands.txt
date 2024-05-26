@@ -1,0 +1,93 @@
+Ex.No:1 BASIC UNIX COMMANDS
+
+GENERAL COMMANDS
+[student@krce ~]date
+Sat May 16 06:10:34 UTC 2020
+
+[student@krce ~]date +%D
+05/16/20
+
+[student@krce ~]date +%T
+10:13:11
+
+[student@krce ~]date +%Y
+2020
+
+[student@krce ~]date +%H
+10
+
+[student@krce ~]who
+studentpts/1 May 16 10:05 (172.16.1.14)
+[student@krce ~]who am i
+studentpts/1 May 16 10:05 (172.16.1.14)
+
+[student@krce ~]tty
+/dev/pts/1
+[student@krce ~]uname
+Linux
+[student@krce ~]echo "hello"
+hello
+[student@krce ~]echo $HOME
+/home/student
+[student@krce ~]bcbc
+1.06
+
+[student@krce ~]man lp
+lp(1) Easy Software
+Products lp(1)NAME
+lp - print files cancel - cancel jobs SYNOPSIS
+lp [ -E ] [ -c ] [ -d destination ] [ -h server ] [ -m ] [ -n num- copies [ ]-
+o option ] [ -qpriority ] [ -s ] [ -t title ] [ -H handling
+[ -P page-list ] [ file(s) ]
+lp [ -E ] [ -c ] [ -h server ] [ -i job-id ] [ -n num-copies [ -o option ]
+[ -q priority ] [ -ttitle ] [ -H handling ] [ -P page-list ] cancel [ -a ] [
+-h server ] [ -u username ] [ id ] [ destination ] [ destination-id ]
+
+DESCRIPTION
+Lp submits files for printing or alters a pending job. Use a filename
+of "-" to forceprinting from the standard input.
+[student@krce ~]history
+1 date
+2 date +%D
+3 date +%T
+4 date +%Y
+5 date +%H
+DIRECTORY COMMANDS
+[student@krce]$ pwd
+/home/student
+[student@krce ~]mkdir
+san [student@krce
+~]mkdir s1 s2
+
+[student@krce ~]ls
+s1 s2 san
+[student@krce ~]cd
+s1 [student@krce
+s1]$ cd /
+[student@krce /]$
+cd . .
+[student@krce /]$ rmdir s1
+[student@krce ~]$ ls
+s2 san
+
+FILE COMMANDS
+[student@krce ~]$ cat>test
+hi welcome operating systems lab
+[student@krce ~]$ cat test
+hi welcome operating systems lab
+[student@krce ~]$ cat>>test fourth
+semester
+[student@krce ~]$ cat test
+hi welcome operating systems lab fourth semester
+student@krce ~]$
+cat>test1
+student@krce ~]$ cp test
+test1[student@krce ~]$
+cat test1
+hi welcome operating systems lab fourth semester
+student@krce ~]$ cp -i test test1 cp: overwrite `test1'?
+y[student@krce ~]$ cp -r test test1
+[student@krce ~]$ ls
+s s2 san swap.sh temp.sh test TEST test1
+[student@krce ~]$ mv san san1
+[student@krce ~]$ ls
